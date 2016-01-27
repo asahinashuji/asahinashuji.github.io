@@ -4,15 +4,120 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>オリジナルポートフェリオページ</title>
+    <meta description="techacademy webアプリケーションコース13期生の朝比奈秀二が製作した、アプリケーションの紹介ページ">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+   
+      h1 {
+        text-align: center;
+        line-height: 200px;
+        font-size: 5rem;
+        text-shadow: 3px 3px 0px white;
+      }
+      .box {
+       text-align: center;
+       margin-top: 30px;
+      }
+      .plofile {
+        height:auto;
+        margin-top: 30px;
+        padding-bottom:10px;
+        text-align: center;
+      }
+      .bold {
+        font-weight:bold;
+      }
+      footer {
+        line-height:30px;
+        text-align: center;
+      }
+    
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header class="col-sm-12 bg-info">
+      <h1>introduce my application</h1>  
+    </header>
+    <content>
+      <div class="col-sm-9">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="box">
+              <img src="imag/dammy.png" alt="アプリ画像です" title="アプリ　メッセージボード">
+              <p>これは、初めて製作したアプリです。<br>
+              メッセージボード</p>
+              <a href="#" class="btn btn-info">アプリサンプルページ</a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="box">
+              <img src="imag/dammy.png" alt="アプリ画像です" title="アプリ　twitterクローン">
+              <p>これは、２回目に製作したアプリです。<br>
+              twitterクローン</p>
+              <a href="#" class="btn btn-info">アプリサンプルページ</a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="box">
+              <img src="imag/dammy.png" alt="アプリ画像です" title="アプリ　モノリスト">
+              <p>これは、３回目に製作したアプリです。<br>
+              モノリスト</p>
+              <a href="#" class="btn btn-info">アプリサンプルページ</a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="box">
+              <img src="imag/dammy.png" alt="アプリ画像です" title="アプリ　オリジナルサービス">
+              <p>これは、最後に製作したアプリです。<br>
+              オリジナルサービス</p>
+              <a href="#" class="btn btn-info">アプリサンプルページ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 bg-success">
+        <div class="plofile">
+          <img src="imag/ourhousedog.jpg" width="200px" height="200px" alt="柴犬が気持ちよさそうに寝ている画像" title="我が家の愛犬ラッキー">
+          <h2>自己紹介</h2>
+          <p>Name :<span class="bold">朝比奈秀二</span></p>
+          <p>Age :<span class="bold">４０代半ば</span></p>
+          <p>Residence :<span class="bold">横浜市</span></p>
+          <p span class="bold">ご挨拶</p>
+          <p>はじめまして、私は４０代の普通のサラリーマンです</p>
+          <p>PC音痴、英語も全くわからないのですが<br>
+          今回、techacademyさんに<br>
+          参加させて頂きプログラムに挑戦しようと思います！</p>
+          <p>写真は我が家の愛犬<span class="bold">ラッキー</span>です。</p>
+          <h3>私のGitHubページはこちらです</h3>
+          <a href="https://github.com/asahinashuji" target="_blanc" class="btn btn-primary">My GitHub</a>
+          <br>
+          <br>
+          <p>応援メッセージをお待ちしてます</p>
+          <form>
+            <div class="form-group">
+              <label for="inputName">Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="お名前">
+            </div>
+            <div class="form-group">
+              <label for="inputContent">メッセージ</label>
+              <textarea class="form-control" id="inputContent" rows="4" placeholder="メッセージをお願いします"></textarea>
+            </div>
+            <div class="form-group"></div>
+            <button type="submit" class="btn btn-primary">送信</button>
+          </form>
+        </div>
+       </div> 
+    </content>
+    <footer>
+      <div class="col-sm-12 bg-info">
+        <p>cpyright 2016</p>
+      </div>
+    </footer>
   </body>
 </html>
